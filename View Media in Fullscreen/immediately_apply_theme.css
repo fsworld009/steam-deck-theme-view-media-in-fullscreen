@@ -1,0 +1,18 @@
+
+/* Without this patch, the theme won't work until about 10 seconds after user
+ * enters Media page.
+ *
+ * The reason being this particular div has
+ * `topleveltransitionswitch_EnterActive_Cpk9b` class. This class sets
+ * `transform: scale(1)`, which breaks the patch.
+ * 
+ * This div would eventually loses topleveltransitionswitch_Enter_d8bGj
+ * and topleveltransitionswitch_EnterActive_Cpk9b classes after about 10
+ * seconds, so this patch isn't necessary.
+ *
+ * Making this patch optional since this applies to a global div and I'm not
+ * sure if this would break other pages.
+ */
+ .overlappingtransition_ContentWrapper_1knAs.topleveltransitionswitch_AbsoluteDiv_2RXNR.topleveltransitionswitch_TopLevelTransition_2vPeX.topleveltransitionswitch_Enter_d8bGj.topleveltransitionswitch_EnterActive_Cpk9b {
+  transform: none;
+}

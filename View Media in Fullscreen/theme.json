@@ -1,0 +1,26 @@
+{
+	"name": "View Media in Fullscreen",
+	"author": "WorldFS",
+	"target": "Media",
+	"version": "v1.0",
+	"description": "Display the selected image in fullscreen when viewing them in Media page",
+	"manifest_version": 5,
+	"inject": {
+		"shared.css": [
+			"SP"
+		]
+	},
+	"dependencies": {},
+  "patches": {
+    "Delay Effective Time (Turn this on if the theme breaks other pages)": {
+        "default": "No",
+        "type": "checkbox",
+        "values": {
+            "No": {
+              "immediately_apply_theme.css": ["SP"]
+            },
+            "Yes": {}
+        }
+    }
+  }
+}
