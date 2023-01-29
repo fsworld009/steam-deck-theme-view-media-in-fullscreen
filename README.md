@@ -9,7 +9,6 @@ fullscreen when viewing them in Media page.
 **With this Theme**
 ![after](./img/after.jpg)
 
-
 ## Prerequisite
 
 1. [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader#installation)
@@ -17,22 +16,32 @@ fullscreen when viewing them in Media page.
 
 ## Installation
 
+### via CSS Loader
+
+1. Open Quick Access Menu -> Decky -> CSS Loader -> Manage Themes
+2. Search `View Media in Fullscreen`
+3. Select `View Media in Fullscreen` and click install
+3. Turn on `View Media in Fullscreen`
+
+![installation](./img/cssloader_install.jpg)
+
 ### Manual
 
-1. Clone the repo or download the code from [Release](https://github.com/fsworld009/steam-deck-theme-view-media-in-fullscreen/releases)
+1. Download the theme via one of the methods:
+   1. From [Deckthemes](https://deckthemes.com/themes/view?themeId=9b219b1d-c23e-43b1-8269-e7a7f59af45f)
+   2. download the code from [Release](https://github.com/fsworld009/steam-deck-theme-view-media-in-fullscreen/releases)
+   3. Clone the repo via git
 2. Copy `View Media in Fullscreen` folder to `/home/deck/homebrew/themes/`
 3. Open Quick Access Menu -> Decky -> CSS Loader -> Reload themes
 4. Turn on `View Media in Fullscreen`
 
+
+## Theme Options
+
 ![menu](./img/menu.jpg)
 
-### via CSS Loader
-
-Coming soon...
-
-## Note
-
-If enabling `Delay Effective Time` option, the theme won't apply until about 10
+Users aren't expected to turn on `Delay Effective Time` unless it breaks
+other pages. If enabled, the theme won't apply until about 10
 seconds after user enters Media page. See the comment in [source code](./View%20Media%20in%20Fullscreen\patch_global_div.css)
 for explanation.
 
